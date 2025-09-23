@@ -1,21 +1,19 @@
 #include <stdio.h>
 
 int main() {
-    char name[51];
-    int age;
-    char hobbie[101];
+    float length, width, area;
 
-    printf("Enter your name:\n");
-    scanf("%50s", name);
+    // Input length and width from user
+    printf("Enter the length of the rectangle: ");
+    scanf("%f", &length);
+    printf("Enter the width of the rectangle: ");
+    scanf("%f", &width);
 
-    printf("Enter your age:\n");
-    scanf("%d", &age);
+    // Calculate area
+    area = length * width;
 
-    printf("What is your favourite hobbie?\n");
-    scanf("%100s", hobbie);
-
-    printf("Hello %s! You are %d years old and your favourite hobbie is %s. Nice to meet you!\n",
-           name, age, hobbie);
+    // Print result
+    printf("The area of the rectangle is: %.2f\n", area);
 
     return 0;
 }
